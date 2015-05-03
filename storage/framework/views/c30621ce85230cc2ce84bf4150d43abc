@@ -1,0 +1,33 @@
+<?php $__env->startSection('content'); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">Home</div>
+
+				<div class="panel-body">
+					You are logged in!
+
+					<?php echo Form::label('Este es el grupo '); ?>
+
+					<?php echo Form::label($group->name); ?>
+
+						<?php
+						
+							foreach( $members as $person )
+							{ ?>
+								
+								<div>
+									<a href="<?php echo 'which_person_id/' . $person->id . '">' . $person->name; ?></a>
+								</div>
+							<?php }
+						?>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

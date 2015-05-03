@@ -1,0 +1,32 @@
+[02-May-2015 16:34:09 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/uzupis/public_html/ec/app/Http/Controllers/HomeController.php on line 47
+[02-May-2015 16:35:12 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/uzupis/public_html/ec/app/Http/Controllers/HomeController.php on line 55
+[02-May-2015 16:40:39 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Person' not found in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 45
+[02-May-2015 16:56:27 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 56
+[02-May-2015 16:56:28 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 56
+[02-May-2015 19:12:14 UTC] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::languages() in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 71
+[02-May-2015 19:28:49 UTC] PHP Fatal error:  Class 'App\Http\Controllers\DB' not found in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 71
+[02-May-2015 19:51:13 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: personsDB' in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php:72
+Stack trace:
+#0 /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php(72): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/uzupis/pu...', 72, Array)
+#1 [internal function]: App\Http\Controllers\WelcomeController->show_4_language('English')
+#2 /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('show_4_language', Array)
+#4 /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\WelcomeController), Object(Illuminate\Routing\Route), 'show_4_lang in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 72
+[02-May-2015 19:51:13 UTC] PHP Fatal error:  Class name must be a valid object or a string in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 72
+[02-May-2015 23:29:54 UTC] PHP Fatal error:  Class 'Form' not found in /home/uzupis/public_html/ec/storage/framework/views/97f5bc800ddef69d25d292a1b9a2b075 on line 11
+[02-May-2015 23:37:52 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::checkbox() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 213
+[02-May-2015 23:37:55 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::checkbox() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 213
+[02-May-2015 23:39:15 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::checkbox() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 216
+[02-May-2015 23:40:05 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::label() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 210
+[02-May-2015 23:40:08 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::label() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 210
+[02-May-2015 23:40:19 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::checkbox() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 213
+[02-May-2015 23:43:18 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::open() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 210
+[02-May-2015 23:46:12 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::open() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 210
+[02-May-2015 23:46:14 UTC] PHP Fatal error:  Call to undefined method Illuminate\Html\FormFacade::open() in /home/uzupis/public_html/ec/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 210
+[03-May-2015 00:14:20 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Group' not found in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 96
+[03-May-2015 00:57:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 106
+[03-May-2015 02:09:40 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\WelcomeController::which_person() in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 71
+[03-May-2015 02:20:02 UTC] PHP Fatal error:  Class 'HTML' not found in /home/uzupis/public_html/ec/storage/framework/views/97f5bc800ddef69d25d292a1b9a2b075 on line 24
+[03-May-2015 02:20:21 UTC] PHP Fatal error:  Class 'HTML' not found in /home/uzupis/public_html/ec/storage/framework/views/97f5bc800ddef69d25d292a1b9a2b075 on line 24
+[03-May-2015 02:20:24 UTC] PHP Fatal error:  Class 'HTML' not found in /home/uzupis/public_html/ec/storage/framework/views/97f5bc800ddef69d25d292a1b9a2b075 on line 24
+[03-May-2015 02:20:26 UTC] PHP Fatal error:  Class 'HTML' not found in /home/uzupis/public_html/ec/storage/framework/views/97f5bc800ddef69d25d292a1b9a2b075 on line 24

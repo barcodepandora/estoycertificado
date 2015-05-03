@@ -1,0 +1,34 @@
+<?php $__env->startSection('content'); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">Home</div>
+
+				<div class="panel-body">
+					You are logged in!
+
+					<?php echo Form::open(array('route' => 'which_age_go', 'class' => 'form')); ?>
+
+
+						<?php echo Form::text('age', null, 
+							array('required', 
+								  'class'=>'form-control', 
+								  'placeholder'=>'Encuentre personas dada su edad')); ?>
+
+					<div class="form-group">
+						<?php echo Form::submit('Go', 
+						  array('class'=>'btn btn-primary')); ?>
+
+					</div>
+					<?php echo Form::close(); ?>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
