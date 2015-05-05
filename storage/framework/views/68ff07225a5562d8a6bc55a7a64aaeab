@@ -151,11 +151,31 @@ MENU
 								  'class'=>'form-control', 
 								  'placeholder'=>'Encuentre usuarios dado un nombre')); ?>
 
-					<div class="form-group">
-						<?php echo Form::submit('Go', 
-						  array('class'=>'btn btn-primary')); ?>
+						<?php echo Form::label('Escoja el idioma'); ?>
 
-					</div>
+	
+						<select name='wendy'>
+							<?php
+							
+								foreach( $languages as $language )
+								{ ?>
+									
+									<option value="<?php echo $language->name; ?>"><?php echo $language->name; ?></option>
+								<?php }
+							?>
+						</select><br/>
+
+						<?php echo Form::text('age', null, 
+							array('required', 
+								  'class'=>'form-control', 
+								  'placeholder'=>'Encuentre personas dada su edad')); ?>
+
+	
+						<div class="form-group">
+							<?php echo Form::submit('Go', 
+							  array('class'=>'btn btn-primary')); ?>
+
+						</div>
 					<?php echo Form::close(); ?>
 
 

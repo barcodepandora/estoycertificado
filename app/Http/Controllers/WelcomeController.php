@@ -65,13 +65,23 @@ class WelcomeController extends Controller {
 	public function which_person()
 	{
 		//
-		return view('which_person', compact('persons'));
+		$languages = Language::all();
+		return view('which_person', compact('persons', 'languages'));
 	}
 
 	public function which_person_go(PersonRequest $request)
 	{
 		//
-		$persons = Person::where('name', 'LIKE', "%" . $request->name . "%")->get();
+		//$persons = Person::where('name', 'LIKE', "%" . $request->name . "%")->get();
+		$persons = DB::table('people')
+			->where('people.name', 'LIKE', "%" . $request->name . "%")
+		    ->join('language_person', 'people.id', '=', 'language_person.person_id')
+            ->join('languages', 'languages.id', '=', 'language_person.language_id')
+            ->where('languages.name', '=', $request->wendy)
+            ->where('people.age', '=', $request->age)
+            ->select('people.*')
+            ->get();		
+
 		return view('all', compact('persons'));
 	}
 

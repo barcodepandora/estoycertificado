@@ -149,7 +149,7 @@ MENU
 							array('required', 
 								  'class'=>'form-control', 
 								  'placeholder'=>'Encuentre usuarios dado un nombre')) !!}
-						{!! Form::open(array('route' => 'which_language_go', 'class' => 'form')) !!}
+						{!! Form::label('Escoja el idioma') !!}
 	
 						<select name='wendy'>
 							<?php
@@ -160,7 +160,12 @@ MENU
 									<option value="<?php echo $language->name; ?>"><?php echo $language->name; ?></option>
 								<?php }
 							?>
-						</select>
+						</select><br/>
+
+						{!! Form::text('age', null, 
+							array('required', 
+								  'class'=>'form-control', 
+								  'placeholder'=>'Encuentre personas dada su edad')) !!}
 	
 						<div class="form-group">
 							{!! Form::submit('Go', 
