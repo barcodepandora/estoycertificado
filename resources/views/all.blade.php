@@ -20,6 +20,7 @@
 								<div>
 									{!! Form::checkbox($person->name, $person->id, false) !!}
 									<a href="<?php echo 'which_person_id/' . $person->id . '">' . $person->name; ?></a>
+									<a href="<?php echo 'write_message/' . $person->id . '">Envia un mensaje'; ?></a>
 								</div>
 							<?php }
 						?>

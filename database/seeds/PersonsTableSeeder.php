@@ -17,6 +17,8 @@ class PersonsTableSeeder extends Seeder {
         	"name" => "Juan",
         	"identi" => "12345",
         	"age" => 40,
+        	"photourl" => "",
+        	"email" => "barcodepandora@gmail.com",
         ]);
         Person::create([
         	
@@ -24,6 +26,8 @@ class PersonsTableSeeder extends Seeder {
         	"name" => "Paula",
         	"identi" => "12347",
         	"age" => 20,
+        	"photourl" => "",
+        	"email" => "paula.alvarez@icdl.com"
         ]);
 
     }

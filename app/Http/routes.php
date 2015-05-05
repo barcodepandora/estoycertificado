@@ -34,6 +34,10 @@ Route::post	('which_language_go', ['as' => 'which_language_go', 'uses' => 'Welco
 Route::get	('which_age', 'WelcomeController@which_age');
 Route::post	('which_age_go', ['as' => 'which_age_go', 'uses' => 'WelcomeController@which_age_go']);
 
+// MENSAJES
+Route::get	('write_message/{id}', 'WelcomeController@write_message');
+Route::post	('send_message', ['as' => 'send_message', 'uses' => 'WelcomeController@send_message']);
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

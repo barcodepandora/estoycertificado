@@ -30,3 +30,4 @@ Stack trace:
 [03-May-2015 02:20:21 UTC] PHP Fatal error:  Class 'HTML' not found in /home/uzupis/public_html/ec/storage/framework/views/97f5bc800ddef69d25d292a1b9a2b075 on line 24
 [03-May-2015 02:20:24 UTC] PHP Fatal error:  Class 'HTML' not found in /home/uzupis/public_html/ec/storage/framework/views/97f5bc800ddef69d25d292a1b9a2b075 on line 24
 [03-May-2015 02:20:26 UTC] PHP Fatal error:  Class 'HTML' not found in /home/uzupis/public_html/ec/storage/framework/views/97f5bc800ddef69d25d292a1b9a2b075 on line 24
+[05-May-2015 04:23:26 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/uzupis/public_html/ec/app/Http/Controllers/WelcomeController.php on line 195

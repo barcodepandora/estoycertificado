@@ -2,10 +2,12 @@
 
 use App\Http\Requests\GroupRequest;
 use App\Http\Requests\PersonRequest;
+use App\Http\Requests\MessageRequest;
 
 use App\ec\entities\Person;
 use App\ec\entities\Language;
 use App\ec\entities\Group;
+use App\ec\entities\Message;
 use DB;
 
 class WelcomeController extends Controller {
@@ -172,4 +174,37 @@ class WelcomeController extends Controller {
 		} 
 		return view('group', compact('group', 'members'));
 	}
+
+	public function write_message($id)
+	{
+		//
+		
+		$person = Person::find($id);
+		return view('message', compact('person'));
+	}
+
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @return Response
+	 */
+	public function send_message(MessageRequest $request)
+	{
+		//
+		//dd('Esta es la idol ' . $request->name);
+		$message = null;
+		$message = Message::create([
+			
+			//"id" => 4,
+			"subject" => $request->subject,
+			"text" => $request->text,
+		]);
+		//$persons = Person::wherein('id', array($))->get();
+
+				$person = Person::find($request->person);
+				$person->messages()->attach($message->id);
+
+		return view('message', compact('person'));
+	}
+
 }

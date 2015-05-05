@@ -13,5 +13,9 @@ class Person extends Model {
     {
         return $this->belongsToMany('App\ec\entities\Group');
     }
+    public function messages()
+    {
+        return $this->belongsToMany('App\ec\entities\Message');
+    }
 
 }
